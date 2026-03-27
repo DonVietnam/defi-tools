@@ -1,5 +1,6 @@
 import { Router, Route, Switch } from 'wouter';
 import DexPositionCalculator from './components/DexPositionCalculator';
+import TonConnect from './components/TonConnect';
 import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar';
 import ApplicationSidebar from '@/components/ApplicationSidebar';
 import Main from '@/components/Main';
@@ -15,6 +16,7 @@ export default function App() {
         <Container className='flex flex-col items-center'>
           <Switch>
             <Route path='/dex-position-calculator' component={DexPositionCalculator} />
+            <Route path='/ton-connect' component={TonConnect} />
             <Route path='/' component={Main} />
             <Route>
               <div style={{ padding: '1rem' }}>
