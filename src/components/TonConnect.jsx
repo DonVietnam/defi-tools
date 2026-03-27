@@ -16,7 +16,7 @@ export default function DexPositionCalculator() {
     tonLink += `&jetton=${jetton}`;
   }
 
-  window.location.href = tonLink;
+  window.open(tonLink, '_blank');
 
   return (
     <Container className='flex justify-center'>
